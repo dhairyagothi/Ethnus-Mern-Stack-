@@ -1,0 +1,27 @@
+body {
+    background: #fff;
+}
+.chessboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.chessboard {
+    border: 6px double #222;
+    background: #fff;
+    margin: 20px;
+    border-spacing: 0;
+}
+.chessboard td {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.chessboard .white {
+    background: #fff;
+}
+.chessboard .black {
+    background: #000;
+}

@@ -1,0 +1,107 @@
+/* Table Styles */
+h1{
+    text-align: center;
+}
+
+.table-section {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 0 2px 8px #eee;
+}
+.styled-table thead tr {
+    background-color: #22c55e;
+    color: #fff;
+    text-align: left;
+}
+.styled-table th, .styled-table td {
+    padding: 12px 16px;
+}
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Navigation Bars Section */
+.navbars-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+/* Vertical Navbar */
+.vertical-navbar {
+    border: 2px solid #bbb;
+    width: 260px;
+    margin-bottom: 30px;
+}
+.vertical-navbar h4 {
+    margin: 10px 0 0 10px;
+    font-size: 1.1em;
+}
+.vertical-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.vertical-navbar li {
+    padding: 18px 16px;
+    font-size: 1.3em;
+    background: #b2e0ea;
+    border-bottom: 1px solid #fff;
+}
+.vertical-navbar li.active {
+    background: #f7b32b;
+    color: #fff;
+    font-weight: bold;
+}
+.vertical-navbar li a {
+    color: #1a2cc9;
+    text-decoration: underline;
+}
+
+/* Horizontal Navbar */
+.horizontal-navbar {
+    width: 420px;
+    margin-bottom: 30px;
+}
+.horizontal-navbar h4 {
+    margin: 10px 0 0 10px;
+    font-size: 1.1em;
+}
+.horizontal-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: 2px solid #bbb;
+    background: #eaeaea;
+}
+.horizontal-navbar li {
+    padding: 14px 24px;
+    font-size: 1.2em;
+    border-right: 1px solid #888;
+    background: #eaeaea;
+}
+.horizontal-navbar li:last-child {
+    border-right: none;
+}
+.horizontal-navbar li.active {
+    background: #888;
+    color: #fff;
+    font-weight: bold;
+}
+.horizontal-navbar li a {
+    color: #1a2cc9;
+    text-decoration: underline;
+}
