@@ -6,9 +6,9 @@ Welcome to the official repository for my assignments submitted as part of the *
 
 ## 👤 Student Information
 
-- **Name:**  
-- **Registration No.:**  
-- **Email:**  
+- **Name:**  Dhairya Gothi
+- **Registration No.:**  23BCE10225
+- **Email:**  dhairya.23bce10225@vitbhopal.ac.in
 - **Institute:** VIT Bhopal
 
 ---
