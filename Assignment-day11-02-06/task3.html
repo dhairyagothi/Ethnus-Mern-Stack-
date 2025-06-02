@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeat Word</title>
+</head>
+<body>
+    <h2>Repeat a Word a Number of Times</h2>
+   
+    <button onclick="repeatWord()">Repeat</button>
+    <p id="repeatResult"></p>
+    <script>
+        function repeatWord() {
+            const word = String(prompt('Enter a word:'));
+            if (!word) {
+                document.getElementById('repeatResult').textContent = "Please enter a word.";
+                return;
+            }
+            const times = Number(prompt('Number of times:'));
+            let result = '';
+            if (word && times > 0) {
+                for (let i = 0; i < times; i++) {
+                    result += word + ' ';
+                }
+            } else {
+                result = "Please enter a word and a valid number.";
+            }
+            document.getElementById('repeatResult').textContent = result.trim();
+        }
+    </script>
+</body>
+</html>

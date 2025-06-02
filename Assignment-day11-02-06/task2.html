@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Grade</title>
+</head>
+<body>
+    <h2>Enter Your Number and Display Grade</h2>
+    <p id="gradeResult"></p>
+    <script>
+        const marks = Number(prompt("Enter your marks:"));
+        let grade = '';
+        if (marks >= 90) grade = 'A';
+        else if (marks >= 80) grade = 'B';
+        else if (marks >= 70) grade = 'C';
+        else if (marks >= 60) grade = 'D';
+        else if (marks >= 50) grade = 'E';
+        else if (marks >= 0) grade = 'F';
+        else grade = 'Invalid input';
+        document.getElementById('gradeResult').textContent = "Grade: " + grade;
+    </script>
+</body>
+</html>
