@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2 style="text-align:center;">Registration Form</h2>
+    <form id="regForm" style="width:400px; margin:0 auto;">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" id="name" name="name">
+                    <span class="error" id="nameError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="text" id="email" name="email">
+                    <span class="error" id="emailError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Website:</td>
+                <td>
+                    <input type="text" id="website" name="website">
+                    <span class="error" id="websiteError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Message:</td>
+                <td>
+                    <textarea id="message" name="message" rows="3" cols="25"></textarea>
+                    <span class="error" id="messageError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+    <script src="task.js"></script>
+</body>
+</html>

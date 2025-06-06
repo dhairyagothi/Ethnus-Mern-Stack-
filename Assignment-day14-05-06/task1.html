@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Login Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+      
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+    
+        .login-box {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 8px #eee;
+            width: 350px;
+            padding: 32px 32px 18px 32px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .login-box h2 {
+            font-family: 'Brush Script MT', cursive, serif;
+            font-size: 2.5em;
+            margin-bottom: 24px;
+            font-weight: normal;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px 8px 8px 32px;
+            margin-left: -28px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            font-size: 1em;
+        }
+        .input-group .icon {
+            margin-right: 8px;
+            margin-left: 8px;
+            color: #888;
+            font-size: 1.1em;
+            width: 20px;
+            text-align: center;
+        }
+        .login-btn {
+            width: 100%;
+            background: #0095f6;
+            color: #fff;
+            border: none;
+            padding: 10px 0;
+            font-size: 1.1em;
+            border-radius: 3px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            font-size: 0.98em;
+        }
+        .options label {
+            cursor: pointer;
+        }
+        .options a {
+            color: #0095f6;
+            text-decoration: none;
+            font-size: 0.98em;
+        }
+        .signup {
+            margin-top: 18px;
+            font-size: 1em;
+        }
+        .signup a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form class="login-box" id="loginForm">
+                <h2>Instagram</h2>
+                <div class="input-group">
+                    <span class="icon">&#128100;</span>
+                    <input type="text" id="username" placeholder="Username" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <span class="icon">&#128274;</span>
+                    <input type="password" id="password" placeholder="Password" autocomplete="off">
+                </div>
+                <button type="submit" class="login-btn">Log in</button>
+                <div class="options">
+                    <label><input type="checkbox" id="remember"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="signup">
+                    Don't have an account? <a href="#">Sign up here.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="task1.js"></script>
+</body>
+</html>
