@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Password - Generator</div>
+        <div class="row">
+            <input type="text" id="password" readonly>
+            <span class="label">Password</span>
+            <button id="copyBtn">Copy</button>
+        </div>
+        <div class="controls">
+            <input type="range" id="length" min="6" max="32" value="12">
+            <span id="lengthValue">Length 12</span>
+            <label><input type="checkbox" id="chars" checked> Characters</label>
+            <label><input type="checkbox" id="nums" checked> Numbers</label>
+        </div>
+    </div>
+    <script src="password-generator.js"></script>
+</body>
+</html>

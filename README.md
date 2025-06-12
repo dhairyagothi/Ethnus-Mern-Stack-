@@ -17,7 +17,7 @@ Welcome to the official repository for my assignments submitted as part of the *
 
 The **MERN Stack Certification Program by Ethnus** is an intensive hands-on training program focused on full-stack web development using the **MongoDB, Express.js, React.js, and Node.js** technologies.
 
-This repository documents my journey through the course, showcasing completed assignments and practical implementations across **14 days** of learning.
+This repository documents my journey through the course, showcasing completed assignments and practical implementations across **18 days** of learning.
 
 ---
 
@@ -39,6 +39,10 @@ This repository documents my journey through the course, showcasing completed as
 | 12   | 03-06-2024 | Assignment-day12-03-06             | JS Form Validation         |
 | 13   | 04-06-2024 | Assignment-day13-04-06             | JS Number Tasks            |
 | 14   | 05-06-2024 | Assignment-day14-05-06             | JS UI Mini Projects        |
+| 15   | 06-06-2024 | Assignment-day15-06-06             | JS Basic Exercises         |
+| 16   | 09-06-2024 | Assignment-day16-09-06             | JS Password/Clock          |
+| 17   | 10-06-2024 | Assignment-day17-10-06             | JS To-Do List              |
+| 18   | 11-06-2024 | Assignment-day18-11-06             | React Setup                |
 
 > **Note:** Folder names and dates are based on the structure in this repository. Each folder contains the assignments and solutions for the respective day.
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Function Exercises</title>
+</head>
+<body>
+    <h2>Exercise 1: Reverse a Number</h2>
+    <p id="reverseNum"></p>
+
+    <h2>Exercise 2: Alphabetical Order String</h2>
+    <p id="alphaStr"></p>
+
+    <script>
+        function reverseNumber(x) {
+            return Number(x.toString().split('').reverse().join(''));
+        }
+
+        function alphabetOrder(str) {
+            return str.split('').sort().join('');
+        }
+
+        // Exercise 1
+        let x = 32243;
+        document.getElementById('reverseNum').textContent = `Input: ${x} | Output: ${reverseNumber(x)}`;
+
+        // Exercise 2
+        let s = "webmaster";
+        document.getElementById('alphaStr').textContent = `Input: ${s} | Output: ${alphabetOrder(s)}`;
+    </script>
+</body>
+</html>

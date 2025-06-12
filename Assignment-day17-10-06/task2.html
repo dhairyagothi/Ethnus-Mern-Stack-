@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+        h1 {
+            background: #2966c7;
+            color: #fff;
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: inline-block;
+            padding: 2px 12px;
+        }
+        #taskInput {
+            font-size: 1.2em;
+            padding: 4px 8px;
+            width: 260px;
+        }
+        #addBtn {
+            font-size: 1.1em;
+            padding: 4px 14px;
+        }
+        ul {
+            margin-top: 18px;
+            font-size: 1.2em;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1><br><br>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button id="addBtn">Add</button>
+    <ul id="taskList"></ul>
+    <script>
+        document.getElementById('addBtn').onclick = function() {
+            const input = document.getElementById('taskInput');
+            const task = input.value.trim();
+            if (task) {
+                const li = document.createElement('li');
+                li.textContent = task;
+                document.getElementById('taskList').appendChild(li);
+                input.value = '';
+            }
+        };
+        document.getElementById('taskInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') document.getElementById('addBtn').click();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live DateTime with Start/Stop</title>
+</head>
+<body>
+    <div>
+        <span id="datetime"></span>
+    </div>
+    <br>
+    <button onclick="startTimer()">Click me</button>
+    <button onclick="stopTimer()">stop</button>
+
+    <script>
+        let timer = null;
+
+        function updateDateTime() {
+            document.getElementById('datetime').textContent = new Date().toString();
+        }
+
+        function startTimer() {
+            if (timer) return;
+            updateDateTime();
+            timer = setInterval(updateDateTime, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timer);
+            timer = null;
+        }
+
+        // Start timer on page load
+        startTimer();
+    </script>
+</body>
+</html>

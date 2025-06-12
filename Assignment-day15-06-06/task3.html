@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form Validation</title>
+</head>
+<body>
+    <form id="myForm" autocomplete="off">
+        <label>First Name
+            <input type="text" id="fname" placeholder="First Name">
+            <span id="fnameErr"></span>
+        </label>
+        <div>Please supply your first name</div>
+        <br>
+        <label>Last Name
+            <input type="text" id="lname" placeholder="Last Name">
+            <span id="lnameErr"></span>
+        </label>
+        <div>Please supply your last name</div>
+        <br>
+        <label>E-Mail
+            <input type="text" id="email" placeholder="E-Mail Address">
+            <span id="emailErr"></span>
+        </label>
+        <div>Please supply your email address</div>
+        <br>
+        <label>Phone #
+            <input type="text" id="phone" placeholder="(845)555-1212">
+            <span id="phoneErr"></span>
+        </label>
+        <div>Please supply your phone number</div>
+        <br>
+        <label>Address
+            <input type="text" id="address" placeholder="Address">
+            <span id="addressErr"></span>
+        </label>
+        <div>Please supply your street address</div>
+        <br>
+        <label>City
+            <input type="text" id="city" placeholder="city">
+            <span id="cityErr"></span>
+        </label>
+        <div>Please supply your city</div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById('myForm').onsubmit = function(e) {
+            e.preventDefault();
+            let valid = true;
+
+            // Clear previous errors
+            document.getElementById('fnameErr').textContent = "";
+            document.getElementById('lnameErr').textContent = "";
+            document.getElementById('emailErr').textContent = "";
+            document.getElementById('phoneErr').textContent = "";
+            document.getElementById('addressErr').textContent = "";
+            document.getElementById('cityErr').textContent = "";
+
+            if (document.getElementById('fname').value.trim() === "") {
+                document.getElementById('fnameErr').textContent = "✗";
+                valid = false;
+            }
+            if (document.getElementById('lname').value.trim() === "") {
+                document.getElementById('lnameErr').textContent = "✗";
+                valid = false;
+            }
+            let email = document.getElementById('email').value.trim();
+            if (email === "" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                document.getElementById('emailErr').textContent = "✗";
+                valid = false;
+            }
+            let phone = document.getElementById('phone').value.trim();
+            if (phone === "" || !/^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/.test(phone)) {
+                document.getElementById('phoneErr').textContent = "✗";
+                valid = false;
+            }
+            if (document.getElementById('address').value.trim() === "") {
+                document.getElementById('addressErr').textContent = "✗";
+                valid = false;
+            }
+            if (document.getElementById('city').value.trim() === "") {
+                document.getElementById('cityErr').textContent = "✗";
+                valid = false;
+            }
+            if (valid) {
+                alert("Form submitted!");
+            }
+        }
+    </script>
+</body>
+</html>
